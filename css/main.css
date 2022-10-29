@@ -11,6 +11,10 @@ body {
   font-size: 13px;
   font-weight: 500;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 /****************Header*************/
 nav {
   display: flex;
@@ -27,10 +31,6 @@ nav {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #fff;
-}
-.list-item a {
-  text-decoration: none;
-  color: #000;
 }
 .list-item:hover {
   border-top-color: #0065fc;
