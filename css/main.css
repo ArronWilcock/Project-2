@@ -201,7 +201,7 @@ main {
   gap: 50px;
 }
 /*****************Accommodations********************/
-.accommodations {
+#accommodations {
   background-color: #f2f2f2;
   margin-left: 50px;
   padding: 30px 50px 0;
@@ -270,7 +270,7 @@ main {
 }
 
 /*****************Most popular********************/
-.most-popular {
+#most-popular {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -308,7 +308,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   border: 5px solid #fff;
-  box-shadow: 3px 3px 5px darkgrey;
+  box-shadow: 3px 2px 5px lightgrey;
 }
 .outer2 img {
   object-fit: cover;
@@ -360,7 +360,7 @@ main {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: 3px 3px 5px #f2f2f2;
 }
 .act-card img {
   height: 100%;
@@ -458,7 +458,7 @@ footer {
   main {
     flex-direction: column;
   }
-  .accommodations {
+  #accommodations {
     margin: 0 50px;
     order: 1;
     padding: 30px 0 0;
@@ -466,7 +466,7 @@ footer {
   .accom-cards {
     justify-content: space-around;
   }
-  .most-popular {
+  #most-popular {
     margin: 0 50px;
     padding: 30px 50px 35px;
   }
@@ -523,6 +523,7 @@ footer {
   .logo-img {
     display: flex;
     justify-content: center;
+    padding-top: 0;
   }
   .nav-list {
     width: 100%;
@@ -634,7 +635,7 @@ footer {
     margin-left: 20px;
   }
   .info {
-    margin: 30px 20px 35px;
+    margin: 30px 20px 25px;
     font-size: 16px;
   }
   /******************mobile main********************/
@@ -642,30 +643,30 @@ footer {
     flex-direction: column;
     gap: 0;
   }
-  .accommodations {
+  #accommodations {
     display: flex;
     flex-direction: column;
     align-items: center;
     order: 1;
     margin: 0;
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 30px 20px 0;
   }
   .acc-hdr {
     font-size: 15px;
     align-self: flex-start;
   }
   .acc-hdr h2 {
-    margin: 10px 0px 15px;
+    margin: 10px 0px 20px;
   }
   .accom-cards {
     gap: 15px;
     justify-content: center;
   }
-  .most-popular {
+  #most-popular {
     border-radius: 0;
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px 35px;
   }
   .outer1 {
     width: 335px;
@@ -701,8 +702,8 @@ footer {
   .inner2-txt p {
     top: 55px;
   }
-  .most-popular {
-    padding: 20px 10px 35px;
+  .inner2-txt span {
+    font-size: 11px;
   }
   .mp-cards {
     align-items: center;
@@ -734,22 +735,19 @@ footer {
     flex-direction: column;
     align-content: center;
     padding: 0;
+    gap: 0;
   }
-  .activities {
+  #activities {
     padding: 0 20px;
   }
   .act-cards-col {
     height: fit-content;
   }
-  .col-2 {
-    gap: 50px;
-  }
-  .col-4 {
-    gap: 50px;
-  }
+
   .act-card {
     height: 190px;
     border-radius: 15px;
+    margin-bottom: 25px;
   }
   .act-img {
     object-fit: cover;
@@ -757,18 +755,26 @@ footer {
     width: 335px;
   }
   .act-hdr {
-    margin: 0;
+    margin: 0 0 30px;
     font-size: 14px;
   }
+  .act-hdr h2 {
+    font-weight: 800;
+  }
   .act-txt {
-    font-size: 15px;
+    height: 55px;
+    font-size: 14px;
     padding-left: 20px;
+  }
+  .act-txt h3 {
+    font-weight: 800;
   }
   /******************mobile footer********************/
   footer {
     flex-direction: column;
     font-size: 15px;
     padding: 35px 0 0 35px;
+    margin-top: 25px;
   }
   .footer {
     width: 100%;
